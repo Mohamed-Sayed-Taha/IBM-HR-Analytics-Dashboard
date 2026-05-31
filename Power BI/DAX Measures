@@ -1,0 +1,71 @@
+## 📐 DAX Measures
+
+All measures are listed in a _measures table.
+
+```dax
+-- ─────────────────────────────────────────
+-- EMPLOYEE METRICS
+-- ─────────────────────────────────────────
+
+Active Employees = 
+CALCULATE([Total Employees], Fact_Emp_Metrics[Attrition] = 0)
+
+
+Total Employees = 
+COUNTROWS(Fact_Emp_Metrics)
+
+
+Avg Tenure Years = 
+AVERAGE(Fact_Emp_Metrics[YearsAtCompany])
+
+
+Avg Employee exp = 
+AVERAGE(Fact_Emp_Metrics[TotalWorkingYears])
+
+
+-- ─────────────────────────────────────────
+-- ATTRITION METRICS
+-- ─────────────────────────────────────────
+
+Attrition Count = 
+CALCULATE([Total Employees], Fact_Emp_Metrics[Attrition] = 1)
+
+
+Attrition rate = 
+DIVIDE(CALCULATE(COUNTROWS(Fact_Emp_Metrics),Fact_Emp_Metrics[Attrition] = 1), COUNTROWS(Fact_Emp_Metrics))
+
+
+Avg OverTime Attrition = 
+CALCULATE([Attrition rate], Fact_Emp_Metrics[OverTime] = 1)
+
+
+-- ─────────────────────────────────────────
+-- INCOME SALARY METRICS
+-- ─────────────────────────────────────────
+
+Avg Income = 
+AVERAGE(Fact_Emp_Metrics[MonthlyIncome])
+
+
+Avg income-leave = 
+CALCULATE(AVERAGE(Fact_Emp_Metrics[MonthlyIncome]), Fact_Emp_Metrics[Attrition] = 1)
+
+
+Avg income-stay = 
+CALCULATE(AVERAGE(Fact_Emp_Metrics[MonthlyIncome]), Fact_Emp_Metrics[Attrition] = 0)
+
+
+Avg Percent Salary Hike = 
+AVERAGE(Fact_Emp_Metrics[PercentSalaryHike])
+
+
+-- ─────────────────────────────────────────
+-- SATISFACTION METRICS
+-- ────────────────────────────────────────
+
+Overall Avg Satisfaction = 
+CALCULATE(
+    AVERAGE(Fact_Satisfaction_Analysis[Satisfaction]),
+    Fact_Satisfaction_Analysis[Satisfaction_type_key] <> 4,
+    Fact_Satisfaction_Analysis[Satisfaction_type_key] <> 6
+)
