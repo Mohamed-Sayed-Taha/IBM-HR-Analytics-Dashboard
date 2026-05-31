@@ -1,7 +1,7 @@
 ```
 IBM-HR-Analytics-Dashboard/
 │
-├── README.md                          # Main project documentation (you're here!)
+├── README.md                          # Main project documentation
 │
 ├── data/
 │       └── IBM_HR_Employee_Attrition.csv     # Original dataset from Kaggle  
