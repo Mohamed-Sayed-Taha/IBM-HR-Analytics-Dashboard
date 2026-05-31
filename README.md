@@ -464,7 +464,7 @@ IBM-HR-Analytics-Dashboard/
 │
 ├── data/
 │   ├── raw/
-│   │   └── IBM_HR_Employee_Attrition.csv     # Original dataset from Kaggle
+│   │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv     # Original dataset from Kaggle
 │   └── processed/
 │       └── README.md                          # Power Query transformations notes
 │
