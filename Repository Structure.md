@@ -4,7 +4,7 @@ IBM-HR-Analytics-Dashboard/
 ├── README.md                          # Main project documentation
 │
 ├── data/
-│       └── IBM_HR_Employee_Attrition.csv     # Original dataset from Kaggle  
+│       └── WA_Fn-UseC_-HR-Employee-Attrition.csv    # Original dataset from Kaggle  
 │
 ├── powerbi/
 │   ├── IBM_HR_Analytics.pbix                 # Power BI Dashboard file
