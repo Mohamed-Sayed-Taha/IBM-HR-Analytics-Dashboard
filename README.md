@@ -592,17 +592,11 @@ If IBM implements the recommended changes:
 
 **Mohamed Sayed Taha**
 
-Data Analyst | Business Intelligence Developer | HR Analytics Specialist
+Data Analyst | Data Analyst | Business Intelligence Developer 
 
-- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/yourprofile)
+- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/mohamed-sayed71)
 - 🐙 GitHub: [More Projects](https://github.com/Mohamed-Sayed-Taha)
-- 📧 Email: your.email@example.com
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- 📧 Email: mohamedsaidtaha1@gmail.com
 
 ---
 
@@ -626,5 +620,5 @@ Want to collaborate on HR analytics projects? Let's connect!
 ---
 
 <div align="center">
-  <strong>Built with 📊 Power BI, 🐍 Python, and ☕ Coffee</strong>
+  <strong>Built with 📊 Power BI and 🐍 Python
 </div>
